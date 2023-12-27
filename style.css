@@ -58,3 +58,39 @@ body {
   transform: translateY(-2px);
 }
 
+/* /// hero /// */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  color: #363940;
+  font-size: 58px;
+  font-weight: 500;
+  line-height: 68px;
+  margin-bottom: 30px;
+}
+
+.hero__text {
+  margin-bottom: 40px;
+}
+.btn {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.6px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+
+  border: none;
+  border-radius: 4px;
+
+  padding-top: 15px;
+  padding-right: 24px;
+  padding-bottom: 15px;
+  padding-left: 24px;
+
+  background-color: #0a61f7;
+}
