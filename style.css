@@ -12,7 +12,7 @@ body {
   line-height: 22px;
   font-weight: 400;
   color: #95a1bb;
-  background-color: #f9fafc;
+  background-color: #f5f5f5;
 }
 
 /* /// layouts /// */
@@ -21,7 +21,7 @@ body {
   margin: 0 auto;
 }
 .container {
-  max-width: 1140px;
+  /* max-width: 1140px; */
   margin: 0 auto;
 }
 .container-header {
@@ -63,12 +63,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #fff;
+  padding-top: 150px;
 }
 
 .heading {
   color: #363940;
-  font-size: 58px;
   font-weight: 500;
+}
+
+.hero__heading {
+  font-size: 58px;
   line-height: 68px;
   margin-bottom: 30px;
 }
@@ -76,21 +81,110 @@ body {
 .hero__text {
   margin-bottom: 40px;
 }
+
 .btn {
-  color: #fff;
-  font-size: 14px;
   font-weight: 500;
   line-height: 19.6px;
   letter-spacing: 1.4px;
   text-transform: uppercase;
 
-  border: none;
+  border: 1px solid #0a61f7;
   border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
 
+.hero .btn {
+  font-size: 14px;
   padding-top: 15px;
   padding-right: 24px;
   padding-bottom: 15px;
   padding-left: 24px;
+}
 
+.btn--primary {
+  color: #fff;
+  font-size: 12px;
   background-color: #0a61f7;
+  padding: 8px 40px;
+}
+.btn--primary:hover {
+  background-color: #3b81f9;
+  border-color: #3b81f9;
+}
+
+.btn--primary-outline {
+  color: #0a61f7;
+  font-size: 12px;
+  background: none;
+  padding: 8px 40px;
+}
+.btn--primary-outline:hover {
+  color: #3b81f9;
+  border-color: #3b81f9;
+}
+
+.rates-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #f9fafc;
+}
+.rates__heading {
+  font-size: 32px;
+  line-height: 43px;
+  margin-bottom: 20px;
+}
+.rates__text {
+  margin-bottom: 40px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #95a1bb;
+  border-collapse: collapse;
+}
+.rates__table {
+}
+.rates__table th {
+  min-width: 240px;
+  padding: 20px;
+}
+.rates__table td {
+  text-align: center;
+}
+
+.feature-header {
+  color: #95a1bb;
+  font-size: 14px;
+  font-weight: inherit;
+}
+
+.standart-header,
+.plus-header,
+.pro-header {
+  color: #363940;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.theory-header,
+.practice-header,
+.code-review-header {
+  color: #363940;
+  font-size: 14px;
+  font-weight: inherit;
+}
+
+.questions-header {
+  color: #0a61f7;
+  font-size: 14px;
+  font-weight: inherit;
+}
+
+.questions-header td {
+  padding: 30px 50px;
 }
